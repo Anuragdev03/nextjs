@@ -87,12 +87,6 @@ body {
 
 body {
   color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
 }
 
 a {
@@ -104,4 +98,17 @@ a {
   html {
     color-scheme: dark;
   }
+}
+
+.charts {
+  display: flex;
+  padding: .54rem;
+  height: 500px;
+  position: relative;
+  gap: 2rem
+}
+
+.charts > div {
+  width: 33.33%;
+  height: 450px;
 }
